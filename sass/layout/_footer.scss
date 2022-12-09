@@ -8,8 +8,6 @@ footer {
 
     .footer__section--about{
 
-
-
         .footer__section--about--ul{    
             display: flex;
             gap: 2%;
@@ -18,7 +16,7 @@ footer {
                height: 35px;
                width: 35px;
                border-radius: 30px;
-                @include flexDisplayContentAlign(flex,center,center)
+           
                 svg{
                     height: 25px;
                     width: 25px;
