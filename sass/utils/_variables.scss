@@ -1,0 +1,20 @@
+@mixin tipografia($color, $font-size, $font-weight: 400, $font-style: normal, $font-family: 'Open sans') {
+    color: $color;
+    font: $font-style $font-weight $font-size $font-family;
+  }
+
+
+@mixin flexDisplayContentAlign($display,$content,$align) {
+    display: $display;
+    justify-content: $content;
+    align-items: $align;
+}
+@mixin tamanioAltoAncho($h,$w) {
+    height: $h;
+    width: $w;
+}
+
+@mixin flexDisplayContent($display,$content) {
+    display: $display;
+    justify-content: $content;
+}
