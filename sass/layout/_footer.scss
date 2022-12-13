@@ -5,6 +5,7 @@ footer {
     background-color: rgb(23, 23, 23);
 }
 .footer__section {
+    margin-right: 20px;
     margin-left: 20px;
 
     .footer__section--about{
@@ -24,7 +25,7 @@ footer {
                 &:hover{
                     width: 40px;
                     height: 40px;
-                    background-color: rgb(45, 85, 195);    
+                    background-color: rgb(229, 19, 68);    
                     .logo-socials{
                         width: 26px;
                         height: 26px;
@@ -43,6 +44,17 @@ footer {
 
     }
     .footer__section--horarios{
+
+        ul{
+
+            li{
+
+                span{
+                    float: right;
+                    color: red;
+                }
+            }
+        }
 
     }
     .footer__section--contacto{

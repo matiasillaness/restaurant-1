@@ -13,27 +13,90 @@ body {
   font-family: "Yeseva One", cursive;
 }
 
+hr {
+  margin: 30px 30px;
+}
+
 footer {
+  color: aliceblue;
   width: 100%;
-  height: 1208px;
+  height: auto;
+  background-color: rgb(23, 23, 23);
 }
 
 .footer__section {
-  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.footer__section .footer__section--about {
+  margin-bottom: 20px;
 }
 .footer__section .footer__section--about .footer__section--about--ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
   gap: 2%;
 }
 .footer__section .footer__section--about .footer__section--about--ul li {
-  background-color: rgb(15, 53, 53);
+  background-color: rgb(255, 255, 255);
   height: 35px;
   width: 35px;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
 }
-.footer__section .footer__section--about .footer__section--about--ul li svg {
-  height: 25px;
-  width: 25px;
+.footer__section .footer__section--about .footer__section--about--ul li:hover {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(229, 19, 68);
+}
+.footer__section .footer__section--about .footer__section--about--ul li:hover .logo-socials {
+  width: 26px;
+  height: 26px;
+}
+.footer__section .footer__section--about .footer__section--about--button {
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer__section .footer__section--horarios ul li span {
+  float: right;
+  color: red;
+}
+.footer__section .footer__section--contacto {
+  margin-top: 20px;
+}
+.footer__section .footer__section--contacto ul {
+  margin-top: 10px;
+}
+.footer__section .footer__section--contacto ul li {
+  display: flex;
+  margin-top: 5px;
+}
+.footer__section .footer__section--contacto ul li div {
+  width: 20px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.footer__section .footer__section--contacto ul li div svg {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+}
+.footer__section .footer__section--derechos {
+  text-align: center;
+}
+
+.logo-socials {
+  width: 23px;
+  height: 23px;
+  transition: all 0.5s;
 }
 
 header {
@@ -193,6 +256,139 @@ header .header-main .header-main-logo .header-main-logo__line {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+div#slider {
+  overflow: hidden;
+}
+
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.main-sobre-nosotros {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-sobre-nosotros img {
+  width: 80%;
+  height: 300px;
+}
+
+#un-poco {
+  color: rgb(28, 68, 186);
+}
+
+#main-sobre-nosotros__button {
+  color: black;
+  background-color: rgb(246, 233, 82);
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+  margin: 30px 30px;
+  transition: all 0.7s;
+}
+#main-sobre-nosotros__button:hover {
+  color: rgb(255, 253, 253);
+  background-color: rgb(25, 25, 25);
+}
+
+#main-sobre-nosotros__texto {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#main-sobre-nosotros__line {
+  height: 1px;
+  width: 75%;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.main-especialidades {
+  background: rgb(23, 23, 23);
+  margin-top: 20px;
+}
+.main-especialidades div {
+  color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px 10px;
+  font-size: 20px;
+}
+.main-especialidades div ul li {
+  margin-bottom: 4px;
+}
+.main-especialidades div ul li span {
+  float: right;
+  color: red;
+}
+.main-especialidades div h2 {
+  margin-bottom: 20px;
+}
+
+#main-especialidades__button {
+  border-radius: 20px;
+  font-size: 18px;
+  width: 50%;
+  margin-top: 20px;
+  color: whitesmoke;
+  background-color: red;
+  border: none;
+  transition: all 1s;
+}
+#main-especialidades__button:hover {
+  color: rgb(229, 0, 0);
+  background-color: rgb(253, 253, 253);
+}
+
+.main-menu-del-dia img {
+  width: 300px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

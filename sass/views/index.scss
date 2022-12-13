@@ -1,0 +1,135 @@
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite; 
+    }
+
+
+    .main-sobre-nosotros{
+      font-size: 23px;
+      font-weight: bold;
+      text-align: center;
+      @include flexDisplayContentAlign(flex,center,center);
+      flex-direction: column;
+      img{
+        width:80%;
+        height: 300px;
+      }
+    }
+   
+
+    #un-poco{
+      color: rgb(28, 68, 186);
+    }
+
+    #main-sobre-nosotros__button{
+      color: black;
+      background-color: rgb(246, 233, 82);
+      width: 70%;
+      height: 50px;
+      font-size: 20px;
+      margin: 30px 30px;
+      transition: all 0.7s;
+      &:hover{
+        color: rgb(255, 253, 253);
+        background-color: rgb(25, 25, 25);
+      }
+    }
+
+
+    #main-sobre-nosotros__texto{
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    #main-sobre-nosotros__line{
+      height: 1px;
+      width: 75%;
+      background-color: black;
+      margin-top: 10px;
+    }
+
+
+
+    //!menu especial!
+
+
+.main-especialidades{
+  background:rgb(23, 23, 23);
+  margin-top: 20px;
+  div{
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:10px 10px;
+    font-size: 20px;
+    ul{
+      li{
+        margin-bottom: 4px;
+        span{
+          float: right;
+          color: red;
+        }
+      }
+    }
+    h2{
+      margin-bottom: 20px;
+    }  
+  }
+
+}
+
+#main-especialidades__button{
+  border-radius: 20px;
+  font-size: 18px;
+  width: 50%;
+  margin-top: 20px;
+  color: whitesmoke;
+  background-color: red;
+  border: none;
+  transition: all 1s;
+  &:hover{
+    color: rgb(229, 0, 0);
+    background-color: rgb(253, 253, 253);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-menu-del-dia{
+  img{
+    width: 300px;
+    height: 300px;
+  }
+}
