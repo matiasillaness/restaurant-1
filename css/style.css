@@ -21,10 +21,24 @@ footer {
   color: aliceblue;
   width: 100%;
   height: auto;
-  background-color: rgb(23, 23, 23);
+  background: url(../media/imagen-footer.jpg);
+  float: left;
+  background-size: cover;
+  position: relative;
+}
+footer::before {
+  background-color: rgba(0, 0, 0, 0.664);
+  background-size: auto;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__section {
+  position: relative;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -48,19 +62,20 @@ footer {
   transition: all 0.5s;
 }
 .footer__section .footer__section--about .footer__section--about--ul li:hover {
-  width: 40px;
-  height: 40px;
   background-color: rgb(229, 19, 68);
 }
-.footer__section .footer__section--about .footer__section--about--ul li:hover .logo-socials {
-  width: 26px;
-  height: 26px;
-}
 .footer__section .footer__section--about .footer__section--about--button {
-  border: 1px solid rgb(233, 233, 233);
+  border: 2px solid #fff;
   border-radius: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 20px;
+  transition: all 1s ease;
+  display: inline-block;
+}
+.footer__section .footer__section--about .footer__section--about--button:hover {
+  background-color: rgb(229, 19, 68);
+  border: none;
 }
 .footer__section .footer__section--horarios ul li span {
   float: right;
@@ -306,7 +321,7 @@ div#slider figure {
 }
 
 .main-sobre-nosotros {
-  font-size: 23px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   display: flex;
@@ -320,12 +335,14 @@ div#slider figure {
 }
 
 #un-poco {
-  color: rgb(28, 68, 186);
+  color: rgb(228, 25, 25);
+  font-size: 35px;
 }
 
 #main-sobre-nosotros__button {
+  border: none;
   color: black;
-  background-color: rgb(246, 233, 82);
+  background-color: rgb(228, 210, 15);
   width: 70%;
   height: 50px;
   font-size: 20px;
@@ -334,12 +351,13 @@ div#slider figure {
 }
 #main-sobre-nosotros__button:hover {
   color: rgb(255, 253, 253);
-  background-color: rgb(25, 25, 25);
+  background-color: #3c3c3c;
 }
 
 #main-sobre-nosotros__texto {
   font-size: 15px;
   font-weight: 500;
+  color: rgba(51, 51, 51, 0.735);
 }
 
 #main-sobre-nosotros__line {
@@ -350,8 +368,12 @@ div#slider figure {
 }
 
 .main-especialidades {
-  background: rgb(23, 23, 23);
+  background-image: url(../media/menu-main.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 60px 0;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .main-especialidades div {
   color: aliceblue;
@@ -386,9 +408,39 @@ div#slider figure {
   background-color: rgb(253, 253, 253);
 }
 
-.main-menu-del-dia img {
-  width: 300px;
-  height: 300px;
+.imagen {
+  margin: 10px 0px 20px 0px;
+}
+
+.main-menu-del-dia {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-menu-del-dia .main-menu-del-dia__card {
+  margin: 15px 15px;
+  width: 80%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.main-menu-del-dia .main-menu-del-dia__card .main-menu-del-dia__card__img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main-menu-del-dia .main-menu-del-dia__card p {
+  font-weight: 100;
+  font-size: 15px;
+}
+.main-menu-del-dia .main-menu-del-dia__card h3 {
+  color: #333;
+}
+
+#main-menu-del-dia__title {
+  color: rgb(70, 70, 70);
 }
 
 /*# sourceMappingURL=style.css.map */

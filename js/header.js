@@ -15,3 +15,6 @@ btns.addEventListener("click", (e) => {
       headerMain.position = "static";
   }
 });
+
+
+// we use a simple 1 pixel wide line
