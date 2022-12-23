@@ -8,11 +8,6 @@ footer {
     margin-left: 20px;
 
     .footer__section--about{
-<<<<<<< HEAD
-
-=======
-        margin-bottom: 20px;
->>>>>>> 62d6cc9dd9558c53069e6c64aeab9f5f2a417768
         .footer__section--about--ul{    
             margin-top: 15px;
             margin-bottom: 15px;
@@ -23,12 +18,11 @@ footer {
                height: 35px;
                width: 35px;
                border-radius: 30px;
-<<<<<<< HEAD
+                }
            
                 svg{
                     height: 25px;
                     width: 25px;
-=======
                 @include flexDisplayContentAlign(flex,center,center);
                 transition: all 0.5s;
                 &:hover{
@@ -39,10 +33,9 @@ footer {
                         width: 26px;
                         height: 26px;
                     }
->>>>>>> 62d6cc9dd9558c53069e6c64aeab9f5f2a417768
-                }
             }
         }
+    }
         .footer__section--about--button{
             border: 1px solid rgb(233, 233, 233);
             border-radius: 20px;
@@ -52,9 +45,6 @@ footer {
           
         }
        
-    }
-    .footer__section--horarios{
-        
     }
     .footer__section--contacto{
         margin-top: 20px;
