@@ -1,7 +1,6 @@
 header {
   width: 100%;
   height: auto;
-
   .header-main {
     .header-main-logo {
       display: flex;
@@ -141,7 +140,6 @@ header {
         color: white;
         font-size: 16px;
         font-weight: 800;
-        font-family: "Montserrat", sans-serif;
       }
     }
   }
@@ -167,5 +165,49 @@ header {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  h1{
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .header-main{
+    display: flex;
+  }
+  #btn-mbl-nav {
+    display: none;
+  }
+  #header-main-list {
+    display: flex;
+    justify-content: end; 
+    width: 100%;
+    position: relative;
+    background-color: #18191d00;
+    overflow: scroll;
+    -webkit-animation-name: none;
+    animation-name: none;
+    -webkit-animation-duration: none;
+    animation-duration: none;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;   
+    & ul {
+      padding: 10px;
+      height: 100%;
+      display: flex;  
+      justify-content: end; 
+      li {
+        padding: 15px;
+        list-style: none;
+        margin-left: 20px;
+        & a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          font-size: 22px;
+          font-weight: 600; 
+        }
+      }
+    }
   }
 }
